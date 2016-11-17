@@ -1,0 +1,13 @@
+body {
+  background-color: #039BE5;
+}
+
+.card {
+  position: absolute;
+  top: 50px;
+  margin-top: auto;
+}
+
+.btn {
+  background-color: #0288D1;
+}
