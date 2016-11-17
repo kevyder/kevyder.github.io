@@ -18,6 +18,7 @@
 	<meta http-equiv="Refresh" content="url=http://kevinrodriguez.me/">
 	<title>Kevin Rodríguez | @kevyder </title>
 	<link rel="stylesheet" href="min-css/main.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -27,21 +28,67 @@
 			<div class="card large">
 				<div class="card-image">
 					<img src="imgs/photo.jpg">
-					<span class="card-title"><h1>Kevin Rodríguez</h1></span>
+					<h1 class="card-title">Kevin Rodríguez</h1>
 				</div>
 				<div class="card-content">
 					<h2>Web developer</h2>
+					<center>
+						<div class="social-icons">
+							<ul class="icons">
+								<li>
+									<a target="_blank" href="#" class="social-icon"> <i class="fa fa-github"></i></a>
+								</li>
+								<li>
+									<a target="_blank" href="#" class="social-icon"> <i class="fa fa-twitter"></i></a>
+								</li>
+								<li>
+									<a target="_blank" href="#" class="social-icon"> <i class="fa fa-linkedin"></i></a>
+								</li>
+								<li>
+									<a target="_blank" href="#" class="social-icon"> <i class="fa fa-instagram"></i></a>
+								</li>
+								<li>
+									<a target="_blank" href="#" class="social-icon"> <i class="fa fa-pinterest"></i></a>
+								</li>
+								<li>
+									<a target="_blank" href="#" class="social-icon"> <i class="fa fa-rss" aria-hidden="true"></i></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</center>
 				</div>
 				<div class="card-action">
-					<a href="#">This is a link</a>
+					<center><a class="waves-effect waves-light btn" href="#modal1">Ver Más</a></center>
 				</div>
 			</div>
 		</div>
 		<div class="col m4"></div>
 	</div>
 
+	<div id="modal1" class="modal">
+		<div class="modal-content">
+			<h4>Modal Header</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quisquam itaque, eum. Recusandae, quas numquam, ea delectus magnam porro obcaecati beatae libero a eum, rerum amet consectetur aliquid nulla, veniam!</p>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class=" modal-action modal-close waves-effect waves-green btn">Cerrar</a>
+		</div>
+	</div>
+
+	<div class="fixed-action-btn horizontal">
+		<a class="btn-floating btn-large red">
+			<i class="material-icons">email</i>
+		</a>
+	</div>
+
 </body>
 <script async type="text/javascript" src="min-js/analytics.js"></script>
+<script src="https://use.fontawesome.com/d3a9a36e18.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script>
+	$(document).ready(function() { $('.modal').modal();});
+</script>
 
 </html>

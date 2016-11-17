@@ -7,7 +7,38 @@ body {
   top: 50px;
   margin-top: auto;
 }
+.card-title{
+  margin: 0;
+}
+
+h2{
+  margin: 3px;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #666;
+  font-weight: 700;
+}
 
 .btn {
-  background-color: #0288D1;
+  background-color: #0277BD;
+}
+
+.btn:hover{
+  background-color: #F44336;
+}
+
+.social-icons{
+    margin-top: 3%;
+}
+.social-icons .icons li {
+    display: inline-block;
+    margin: 1%;
+}
+.social-icons .icons li a {
+    color: #03A9F4;
+    text-decoration: none;
+    font-size: 24px;
+}
+.social-icons .icons li a:hover {
+    color: #F44336;
 }
