@@ -38,6 +38,7 @@ h2{
 
 .btn {
   background-color: #0277BD;
+  margin: 5px;
 }
 
 .btn:hover{
