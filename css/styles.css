@@ -70,3 +70,8 @@ h2{
   text-align: justify;
   margin: auto 30px;
 }
+
+.modal .modal-content h5{
+  margin: auto 30px;
+  font-weight: 700;
+}
