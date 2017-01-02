@@ -25,8 +25,7 @@
 
 <body>
 	<div class="row">
-		<div class="col m4"></div>
-		<div class="col s12 l4 m4">
+		<div class="col s12 l4 m4 offset-l4 offset-m4">
 			<div class="card large">
 				<div class="card-image">
 					<img src="imgs/photo.jpg" alt="Kevin Rodríguez | @kevyder">
@@ -62,16 +61,15 @@
 				</div>
 				<div class="card-action">
 					<center>
-						<a class="waves-effect waves-light btn" href="#modal1">About me</a>
-						<a class="waves-effect waves-light btn" href="https://github.com/kevyder?tab=repositories" target="_blank">Projects</a>
+						<a class="waves-effect waves-light btn" href="#about">About me</a>
+						<a class="waves-effect waves-light btn" href="#projects" target="_blank">Projects</a>
 					</center>
 				</div>
 			</div>
 		</div>
-		<div class="col m4"></div>
 	</div>
 
-	<div id="modal1" class="modal">
+	<div id="about" class="modal">
 		<div class="modal-content">
 			<h4>¿Who I am?</h4>
 			<p>Hello, ¿how are you? My name is Kevin Rodriguez, I have 19 years old and i was born in the city of Bogota in Colombia.</p>
@@ -81,23 +79,36 @@
 			<p>Ruby, Ruby on Rails and PHP.</p>
 			<h5>Frontend</h5>
 			<p>HTML, CSS, Javascript, JQuery and AngularJS.</p>
-		<div class="modal-footer">
-			<a class=" modal-action modal-close waves-effect waves-green btn">Close</a>
+			<div class="modal-footer">
+				<a class=" modal-action modal-close waves-effect waves-green btn">Close</a>
+			</div>
 		</div>
 	</div>
-	</div>
 	
+	<div id="projects" class="modal">
+		<div class="modal-content">
+			<h4 class="projects_title">Projects</h4>
+			<div class="section">
+				<a href="https://github.com/kevyder/puffly"><h5>Puffly</h5></a>
+				<p>Fun and cute flash messages for your Ruby on Rails application.</p>
+			</div>
+			<div class="divider"></div>
+			<div class="modal-footer">
+				<a class=" modal-action modal-close waves-effect waves-green btn">Close</a>
+			</div>
+		</div>
+	</div>
 
 	<div class="fixed-action-btn horizontal">
-    <a class="btn-floating btn-large red">
-      <i class="large material-icons">add</i>
-    </a>
-    <ul>
-      <li><a href="mailto:kyrodriguez97@gmail.com" class="btn-floating green"><i class="material-icons">email</i></a></li>
-      <li><a target="_blank" class="btn-floating black darken-1" href="http://kevinrodriguez.me/blog/"><i class="material-icons">format_quote</i></a></li>
-      <li><a class="btn-floating blue" href="http://kevinrodriguez.me/es/"><i class="material-icons">language</i></a></li>
-    </ul>
-  </div>
+		<a class="btn-floating btn-large red">
+			<i class="large material-icons">add</i>
+		</a>
+	    <ul>
+	      <li><a href="mailto:kyrodriguez97@gmail.com" class="btn-floating green"><i class="material-icons">email</i></a></li>
+	      <li><a target="_blank" class="btn-floating black darken-1" href="http://kevinrodriguez.me/blog/"><i class="material-icons">format_quote</i></a></li>
+	      <li><a class="btn-floating blue" href="http://kevinrodriguez.me/es/"><i class="material-icons">language</i></a></li>
+	    </ul>
+	</div>
 
 </body>
 <script async type="text/javascript" src="min-js/analytics.js"></script>
