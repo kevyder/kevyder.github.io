@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Hind|Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Hind|Source+Sans+Pro" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 	<title>Kevin Rodríguez | @kevyder</title>
 </head>
+
 <body>
 	<header>
 		<h1 class="title">Kevin Rodríguez</h1>
@@ -32,15 +35,31 @@
 						<li><a target="_blank" href="https://github.com/kevyder" class="social-icon"> <i class="fa fa-github"></i></a></li>
 						<li><a target="_blank" href="https://twitter.com/kevyder" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
 						<li><a target="_blank" href="https://co.linkedin.com/in/kevyder" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
-						<li><a target="_blank" href="https://behance.net/kevyder" class="social-icon"> <i class="fa fa-behance"></i></a></li>
 						<li><a target="_blank" href="https://angel.co/kevyder" class="social-icon"> <i class="fa fa-angellist"></i></a></li>
 						<li><a target="_blank" href="https://t.me/kevyder" class="social-icon"> <i class="fa fa-telegram"></i></a></li>
+						<li><a target="_blank" href="https://medium.com/@kevyder" class="social-icon"> <i class="fa fa-medium"></i></a></li>
 					</ul>
 				</div>
 			</center>
 		</div>
 	</div>
+	<div class="container projects" ng-controller="AppCtrl">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h2 class="projects_title">Top Open Source Projects</h2>
+				<select class="language" ng-options="x for x in options" ng-model="language">
+					<option style="display:none" value="">All languages</option>
+				</select>
+				<div class="repo" ng-repeat="data in github | filter:language | orderBy : '-stargazers_count' | limitTo: 5">
+					<h1 class="repo_title"><a href="{{data.html_url}}" target="_blank">{{::data.name}}</a></h1>
+					<p class="repo_description">{{::data.description}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 <script src="js/analytics.js" charset="utf-8"></script>
+<script src="js/main.js" charset="utf-8"></script>
 <script src="https://use.fontawesome.com/2daf369e94.js"></script>
+
 </html>
