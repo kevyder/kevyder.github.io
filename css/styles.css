@@ -4,7 +4,7 @@ html, body {
 }
 
 header {
-  background-color: #0C0C0C;
+  background-color: #2B0059;
   height: 20%;
   color: #fff;
 }
@@ -18,8 +18,8 @@ header .title {
 }
 
 .main {
-  height: 55%;
-  background-color: #0C0C0C;
+  height: 80%;
+  background-color: #2B0059;
   color: #fff;
 }
 
@@ -27,9 +27,10 @@ header .title {
   font-size: 15rem;
   font-family: 'Hind', sans-serif;
   font-weight: 700;
+	margin-top: 10%;
   text-align: center;
   transform: translate(0%, 0%);
-  color: #fff;
+  color: #F5F5F5;
 }
 
 .glitch:before, .glitch:after {
@@ -44,15 +45,15 @@ header .title {
 }
 
 .glitch:after {
-  color: #00F90A;
+  color: #f0f;
   z-index: -2;
-  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+	animation: glitch 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
 }
 
 .glitch:before {
-  color: #6B0BCD;
+  color: #0ff;
   z-index: -1;
-  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+	animation: glitch 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
 }
 
 @keyframes glitch {
@@ -84,7 +85,7 @@ header .title {
 
 .main .description {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 
@@ -103,6 +104,61 @@ header .title {
   font-size: 2rem;
 }
 
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  top: 125px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid white;
+  border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
 .projects {
   height: 100%;
   min-height: 60%;
@@ -113,30 +169,34 @@ header .title {
   font-size: 3.5rem;
   font-weight: 700;
   text-align: center;
-  margin: 30px  auto;
+  margin: 30px auto;
 }
 
-.projects .language{
-	border: none;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1.8rem;
-	margin: 5px;
+.projects .language {
+  border: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.8rem;
+  margin: 5px;
 }
 
 .projects .repo_title {
   font-family: 'Hind', sans-serif;
   font-size: 2.5rem;
   line-height: 1;
-	font-weight: 700;
+  font-weight: 700;
 }
 
 .projects .repo {
-	border-bottom: 1px solid #999;
-	padding: 5px;
+  border-bottom: 1px solid #999;
+  padding: 5px;
 }
 
 .projects .repo .repo_title a {
   color: #333;
+}
+
+.projects .repo .repo_title a:hover {
+  color: #8C0E85;
 }
 
 .projects .repo .repo_description {
