@@ -1,0 +1,13 @@
+header {
+  background-color: #2B0059;
+  height: 20%;
+  color: #fff;
+}
+
+header .title {
+  font-family: 'Hind', sans-serif;
+  padding: 2% 3%;
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 300;
+}
