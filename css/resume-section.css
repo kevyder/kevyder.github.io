@@ -1,4 +1,11 @@
 .resume {
-	height: 100%;
-	background-color: #999
+	height: 60%;
+}
+
+.resume .resume_title{
+	font-family: 'Hind', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 60px auto;
 }

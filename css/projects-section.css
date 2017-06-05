@@ -7,7 +7,7 @@
   font-size: 3.5rem;
   font-weight: 700;
   text-align: center;
-  margin: 30px auto;
+  margin: 60px auto;
 }
 
 .projects .language {
@@ -30,8 +30,8 @@
 }
 
 .projects .repo_link .repo:hover {
-  border-bottom: 1px solid #8C0E85;
-  color: #8C0E85;
+  border-bottom: 1px solid #5000A5;
+  color: #5000A5;
   text-decoration: none;
   transform: translateX(8px) translateY(0px);
 }

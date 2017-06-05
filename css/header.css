@@ -3,11 +3,25 @@ header {
   height: 20%;
   color: #fff;
 }
+header ul li{
+	font-family: 'Hind', sans-serif;
+	color: #fff;
+	display: inline-block;
+	margin:0;
+	padding: 2%;
+}
 
-header .title {
-  font-family: 'Hind', sans-serif;
-  padding: 2% 3%;
-  margin: 0;
+header ul li.option{
+	float: right;
+}
+
+header ul li.option a{
+	font-size: 2.2rem;
+	color: #fff
+}
+
+header ul li .title {
   font-size: 2.2rem;
-  font-weight: 300;
+  font-weight: 400;
+	margin:0;
 }

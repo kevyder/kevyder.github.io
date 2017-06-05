@@ -15,7 +15,14 @@
 
 <body>
 	<header>
-		<h1 class="title">Kevin Rodríguez.</h1>
+		<nav class="nav-bar">
+			<ul>
+				<li><h1 class="title">Kevin Rodríguez.</h1></li>
+				<li class="option"><a data-scroll href="#resume">About me</a></li>
+				<li class="option"><a data-scroll href="#projects">Projects</a></li>
+			</ul>
+		</nav>
+
 	</header>
 	<div class="container-fluid main">
 		<div class="row">
@@ -26,7 +33,7 @@
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
 				<p class="description">I'm Kevin, a web developer from Bogotá - Colombia.</p>
-				<a href="#" class="scroll-down" address="true"></a>
+				<a data-scroll href="#projects" class="scroll-down" address="true"></a>
 			</div>
 		</div>
 		<div class="row">
@@ -44,7 +51,7 @@
 			</center>
 		</div>
 	</div>
-	<div class="container projects" ng-controller="AppCtrl">
+	<div class="container projects" id="projects" ng-controller="AppCtrl">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<h2 class="projects_title">Top Open Source Projects</h2>
@@ -54,7 +61,7 @@
 				<div ng-repeat="data in github | filter:language | orderBy : '-stargazers_count' | limitTo: 5">
 					<a class="repo_link" href="{{data.html_url}}" target="_blank">
 						<div class="repo">
-							<h2 class="repo_title">{{::data.name}}</h2>
+							<h3 class="repo_title">{{::data.name}}</h2>
 							<p class="repo_description">{{::data.description}}</p>
 						</div>
 					</a>
@@ -63,9 +70,18 @@
 		</div>
 	</div>
 
+	<div class="container resume" id="resume">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h2 class="resume_title">About me</h2>
+			</div>
+		</div>
+	</div>
+
 </body>
-<script src="js/analytics.js" charset="utf-8"></script>
 <script src="js/main.js" charset="utf-8"></script>
 <script src="https://use.fontawesome.com/2daf369e94.js"></script>
-
+<script src="js/smooth-scroll.min.js" charset="utf-8"></script>
+<script src="js/scroll.js" charset="utf-8"></script>
+<script src="js/analytics.js" charset="utf-8"></script>
 </html>
