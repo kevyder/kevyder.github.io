@@ -36,6 +36,7 @@ header {
 .container-options {
   margin-right: 10%;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-around; }
 
 .option a {
@@ -88,6 +89,44 @@ header {
 .icons li a {
   color: #fff; }
 
+.scroll-down {
+  position: relative;
+  margin-top: 40px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FFF;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in; }
+  .scroll-down::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%) rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px; }
+
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px); } }
+
 .glitch {
   font-size: 10rem;
   font-family: 'Hind', sans-serif;
@@ -135,3 +174,49 @@ header {
   100% {
     -webkit-transform: translate(0);
     transform: translate(0); } }
+
+.projects {
+  min-height: 100%; }
+
+.projects_title {
+  font-family: 'Hind', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 30px auto;
+  color: #2B0059; }
+
+.language {
+  border: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: 10%;
+  font-size: 1.8rem; }
+
+#project {
+  display: block;
+  width: 80%;
+  margin: auto 10%; }
+
+.repo_link {
+  text-decoration: none; }
+
+.repo {
+  border-bottom: 1px solid #999;
+  padding: 30px;
+  color: #666;
+  transition: transform 200ms;
+  transform: translateX(0px) translateY(0px); }
+  .repo:hover {
+    border-bottom: 1px solid #5000A5;
+    color: #5000A5;
+    text-decoration: none;
+    transform: translateX(8px) translateY(0px); }
+
+.repo_title {
+  font-family: 'Hind', sans-serif;
+  font-size: 3rem;
+  font-weight: 700; }
+
+.repo_description {
+  font-size: 1.5rem;
+  font-family: 'Source Sans Pro', sans-serif; }

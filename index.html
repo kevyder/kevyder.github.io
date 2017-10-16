@@ -37,33 +37,28 @@
 				</ul>
 				<a data-easing="easeOutCubic" href="#projects" class="scroll-down" address="true"></a>
 		</div>
-	<div class="container projects" id="projects" data-scroll-id="projects">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
+	<div class="projects" id="projects">
 				<h2 class="projects_title">Top Open Source Projects</h2>
 				<select id="language" class="language">
 					<option value>All languages</option>
 				</select>
-				<div id="project">
-				</div>
-			</div>
-		</div>
+				<div id="project"></div>
 	</div>
 
-	<div class="container resume" id="resume" data-scroll-id="resume">
+	<!-- <div class="container resume" id="resume" data-scroll-id="resume">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<h2 class="resume_title">About me</h2>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 </body>
 <script src="https://use.fontawesome.com/2daf369e94.js"></script>
 <script src="js/main.js" charset="utf-8"></script>
 <script src="js/smooth-scroll.js" charset="utf-8"></script>
 <script>
-	var linear = new SmoothScroll('[data-easing="easeOutCubic"]', {easing: 'easeOutCubic', speed: 700});
+	var linear = new SmoothScroll('[data-easing="easeOutCubic"]', {easing: 'easeOutCubic', speed: 1000, offset: 30});
 </script>
 <script src="setup/analytics.js" charset="utf-8" async></script>
 </html>
