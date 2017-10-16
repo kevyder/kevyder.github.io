@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -9,7 +9,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Hind|Source+Sans+Pro" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 	<title>Kevin Rodríguez | @kevyder</title>
 </head>
 
@@ -51,20 +50,14 @@
 			</center>
 		</div>
 	</div>
-	<div class="container projects" id="projects" ng-controller="AppCtrl">
+	<div class="container projects" id="projects">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<h2 class="projects_title">Top Open Source Projects</h2>
-				<select class="language" ng-options="x for x in options" ng-model="language">
-					<option style="display:none" value="">All languages</option>
+				<select id="language" class="language">
+					<option value>All languages</option>
 				</select>
-				<div ng-repeat="data in github | filter:language | orderBy : '-stargazers_count' | limitTo: 5">
-					<a class="repo_link" href="{{data.html_url}}" target="_blank">
-						<div class="repo">
-							<h3 class="repo_title">{{::data.name}}</h2>
-							<p class="repo_description">{{::data.description}}</p>
-						</div>
-					</a>
+				<div id="project">
 				</div>
 			</div>
 		</div>
@@ -79,8 +72,8 @@
 	</div>
 
 </body>
-<script src="js/main.js" charset="utf-8"></script>
 <script src="https://use.fontawesome.com/2daf369e94.js"></script>
+<script src="js/main.js" charset="utf-8"></script>
 <script src="js/smooth-scroll.min.js" charset="utf-8"></script>
 <script src="js/scroll.js" charset="utf-8"></script>
 <script src="js/analytics.js" charset="utf-8"></script>
