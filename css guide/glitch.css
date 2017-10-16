@@ -1,0 +1,59 @@
+.glitch {
+  font-size: 15rem;
+  font-family: 'Hind', sans-serif;
+  font-weight: 700;
+	margin-top: 10%;
+  text-align: center;
+  transform: translate(0%, 0%);
+  color: #F5F5F5;
+}
+
+.glitch:before, .glitch:after {
+  display: block;
+  content: 'Hello!';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .8;
+}
+
+.glitch:after {
+  color: #f0f;
+  z-index: -2;
+	animation: glitch 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+
+.glitch:before {
+  color: #0ff;
+  z-index: -1;
+	animation: glitch 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+}
+
+@keyframes glitch {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-5px, 5px);
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    -webkit-transform: translate(-5px, -5px);
+    transform: translate(-5px, -5px);
+  }
+  60% {
+    -webkit-transform: translate(5px, 5px);
+    transform: translate(5px, 5px);
+  }
+  80% {
+    -webkit-transform: translate(5px, -5px);
+    transform: translate(5px, -5px);
+  }
+  to {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}

@@ -1,0 +1,27 @@
+header {
+  background-color: #2B0059;
+  height: 20%;
+  color: #fff;
+}
+header ul li{
+	font-family: 'Hind', sans-serif;
+	color: #fff;
+	display: inline-block;
+	margin:0;
+	padding: 2%;
+}
+
+header ul li.option{
+	float: right;
+}
+
+header ul li.option a{
+	font-size: 2.2rem;
+	color: #fff
+}
+
+header ul li .title {
+  font-size: 2.2rem;
+  font-weight: 400;
+	margin:0;
+}

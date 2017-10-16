@@ -1,27 +1,34 @@
+body, html {
+  height: 100%;
+  max-width: 100%; }
+
 header {
   background-color: #2B0059;
-  height: 20%;
+  height: 10%;
   color: #fff;
-}
-header ul li{
-	font-family: 'Hind', sans-serif;
-	color: #fff;
-	display: inline-block;
-	margin:0;
-	padding: 2%;
-}
+  display: flex;
+  align-items: center;
+  align-content: space-between; }
 
-header ul li.option{
-	float: right;
-}
+.nav-bar {
+  width: 100%;
+  display: flex;
+  align-content: space-around; }
 
-header ul li.option a{
-	font-size: 2.2rem;
-	color: #fff
-}
+.logo {
+  font-family: 'Hind', sans-serif;
+  display: inline-block;
+  padding: 0 2%; }
 
-header ul li .title {
+.container-options {
+  display: flex;
+  align-content: space-around; }
+
+.option a {
+  font-size: 2.2rem;
+  color: #fff; }
+
+.title {
   font-size: 2.2rem;
   font-weight: 400;
-	margin:0;
-}
+  margin: 0; }
