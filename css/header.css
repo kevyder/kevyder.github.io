@@ -4,28 +4,44 @@ header {
   color: #fff;
   display: flex;
   align-items: center;
-  align-content: space-between; }
+  justify-content: space-between;
+  font-family: 'Hind', sans-serif; }
 
 .nav-bar {
   width: 100%;
   display: flex;
-  align-content: space-around; }
+  align-items: center;
+  justify-content: space-between; }
 
 .logo {
   font-family: 'Hind', sans-serif;
   display: inline-block;
-  padding: 0 2%; }
-
-.container-options {
-  display: flex;
-  align-content: space-around; }
-
-.option a {
-  font-size: 2.2rem;
-  color: #fff; }
+  margin-left: 10%; }
 
 .title {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  margin: 0;
-  background: red; }
+  margin: 0; }
+
+.container-options {
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-around; }
+
+.option a {
+  margin: .5rem;
+  font-size: 1.2rem;
+  color: #fff; }
+
+.option:hover {
+  position: relative; }
+  .option:hover:after {
+    content: "";
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    bottom: 5px;
+    left: 10%;
+    right: 10%;
+    border-radius: 20px;
+    background-color: #fff; }

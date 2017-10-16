@@ -14,28 +14,124 @@ header {
   color: #fff;
   display: flex;
   align-items: center;
-  align-content: space-between; }
+  justify-content: space-between;
+  font-family: 'Hind', sans-serif; }
 
 .nav-bar {
   width: 100%;
   display: flex;
-  align-content: space-around; }
+  align-items: center;
+  justify-content: space-between; }
 
 .logo {
   font-family: 'Hind', sans-serif;
   display: inline-block;
-  padding: 0 2%; }
-
-.container-options {
-  display: flex;
-  align-content: space-around; }
-
-.option a {
-  font-size: 2.2rem;
-  color: #fff; }
+  margin-left: 10%; }
 
 .title {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  margin: 0;
-  background: red; }
+  margin: 0; }
+
+.container-options {
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-around; }
+
+.option a {
+  margin: .5rem;
+  font-size: 1.2rem;
+  color: #fff; }
+
+.option:hover {
+  position: relative; }
+  .option:hover:after {
+    content: "";
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    bottom: 5px;
+    left: 10%;
+    right: 10%;
+    border-radius: 20px;
+    background-color: #fff; }
+
+.main {
+  height: 90%;
+  background: #2B0059;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.glitch {
+  margin-top: -50px; }
+
+.description {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+  margin-top: -20px; }
+
+.icons {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px; }
+
+.icons li {
+  font-size: 1.5rem; }
+
+.icons li a {
+  color: #fff; }
+
+.glitch {
+  font-size: 10rem;
+  font-family: 'Hind', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  transform: translate(0%, 0%);
+  color: #F5F5F5; }
+
+.glitch:before, .glitch:after {
+  display: block;
+  content: 'Hello!';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .8; }
+
+.glitch::after {
+  color: #f0f;
+  z-index: -2;
+  animation: glitch 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite; }
+
+.glitch:before {
+  color: #0ff;
+  z-index: -1;
+  animation: glitch 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite; }
+
+@keyframes glitch {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0); }
+  20% {
+    -webkit-transform: translate(-5px, 5px);
+    transform: translate(-5px, 5px); }
+  40% {
+    -webkit-transform: translate(-5px, -5px);
+    transform: translate(-5px, -5px); }
+  60% {
+    -webkit-transform: translate(5px, 5px);
+    transform: translate(5px, 5px); }
+  80% {
+    -webkit-transform: translate(5px, -5px);
+    transform: translate(5px, -5px); }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0); } }
