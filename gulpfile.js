@@ -16,17 +16,17 @@ gulp.task('watch', function () {
   gulp.watch('sass/*.sass', ['sass']);
 });
 
-gulp.task('concat', function () {
-  return gulp.src('css/*.css')
-    .pipe(concatCss('app.css'))
-    .pipe(gulp.dest('final_css'));
-});
+// gulp.task('concat', function () {
+//   return gulp.src('css/*.css')
+//     .pipe(concatCss('app.css'))
+//     .pipe(gulp.dest('final_css'));
+// });
 
 gulp.task('css-minify', function () {
-    gulp.src('final_css/*.css')
+    gulp.src('css/main.css')
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('final_css'));
 });
 
-gulp.task('default', ['sass', 'concat', 'css-minify']);
+gulp.task('default', ['sass', 'css-minify']);

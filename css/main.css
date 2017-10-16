@@ -1,9 +1,41 @@
-@import url('header.css');
-@import url('main-section.css');
-@import url('glitch.css');
-@import url('projects-section.css');
-@import url('resume-section.css');
-html, body {
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none; }
+
+body, html {
   height: 100%;
-  max-width: 100%;
-}
+  max-width: 100%; }
+
+header {
+  background-color: #2B0059;
+  height: 10%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  align-content: space-between; }
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  align-content: space-around; }
+
+.logo {
+  font-family: 'Hind', sans-serif;
+  display: inline-block;
+  padding: 0 2%; }
+
+.container-options {
+  display: flex;
+  align-content: space-around; }
+
+.option a {
+  font-size: 2.2rem;
+  color: #fff; }
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin: 0;
+  background: red; }
