@@ -18,8 +18,8 @@
 				<li><h1 class="title">Kevin Rodríguez.</h1></li>
 			</ul>
 			<ul class="container-options">
-				<li class="option"><a data-scroll href="#resume">About me</a></li>
-				<li class="option"><a data-scroll href="#projects">Projects</a></li>
+				<li class="option"><a data-easing="easeOutCubic" href="#resume" id='to_resume'>About me</a></li>
+				<li class="option"><a data-easing="easeOutCubic" href="#projects" id='to_projects'>Projects</a></li>
 			</ul>
 		</nav>
 
@@ -35,9 +35,9 @@
 					<li><a target="_blank" href="https://t.me/kevyder" class="social-icon"> <i class="fa fa-telegram"></i></a></li>
 					<li><a target="_blank" href="https://medium.com/@kevyder" class="social-icon"> <i class="fa fa-medium"></i></a></li>
 				</ul>
-				<a data-scroll href="#projects" class="scroll-down" address="true"></a>
+				<a data-easing="easeOutCubic" href="#projects" class="scroll-down" address="true"></a>
 		</div>
-	<div class="container projects" id="projects">
+	<div class="container projects" id="projects" data-scroll-id="projects">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<h2 class="projects_title">Top Open Source Projects</h2>
@@ -50,7 +50,7 @@
 		</div>
 	</div>
 
-	<div class="container resume" id="resume">
+	<div class="container resume" id="resume" data-scroll-id="resume">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<h2 class="resume_title">About me</h2>
@@ -63,9 +63,7 @@
 <script src="js/main.js" charset="utf-8"></script>
 <script src="js/smooth-scroll.js" charset="utf-8"></script>
 <script>
-	var scroll = new SmoothScroll();
-	var options = { speed: 700, offset: 0, easing: 'easeOutCubic' };
-	scroll.animateScroll( options );
+	var linear = new SmoothScroll('[data-easing="easeOutCubic"]', {easing: 'easeOutCubic', speed: 700});
 </script>
 <script src="setup/analytics.js" charset="utf-8" async></script>
 </html>
