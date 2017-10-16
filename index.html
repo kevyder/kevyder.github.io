@@ -75,7 +75,11 @@
 </body>
 <script src="https://use.fontawesome.com/2daf369e94.js"></script>
 <script src="js/main.js" charset="utf-8"></script>
-<script src="js/smooth-scroll.min.js" charset="utf-8"></script>
-<script src="js/scroll.js" charset="utf-8"></script>
-<script src="js/analytics.js" charset="utf-8"></script>
+<script src="js/smooth-scroll.js" charset="utf-8"></script>
+<script>
+	var scroll = new SmoothScroll();
+	var options = { speed: 700, offset: 0, easing: 'easeOutCubic' };
+	scroll.animateScroll( options );
+</script>
+<script src="setup/analytics.js" charset="utf-8" async></script>
 </html>
