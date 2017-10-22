@@ -24,6 +24,16 @@
   justify-content: space-between;
   margin-top: 20px; }
 
+@media screen and (max-width: 800px) {
+  .glitch {
+    font-size: 6em; }
+  .description {
+    width: 80%;
+    font-size: 1.2em; }
+  .icons {
+    width: 80%;
+    justify-content: space-around; } }
+
 .icons li {
   font-size: 1.5rem; }
 

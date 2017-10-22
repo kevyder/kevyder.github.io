@@ -20,8 +20,10 @@ $purple-color : #2B0059
 #project
   display: block
   width: 80%
-  margin: auto 10%
-  
+  margin: 0 auto
+  overflow-x: hidden
+
+
 .repo_link
   text-decoration: none
 
@@ -45,3 +47,15 @@ $purple-color : #2B0059
 .repo_description
   font-size: 1.5rem
   font-family: 'Source Sans Pro', sans-serif
+
+@media screen and (max-width:800px)
+  .language
+    margin-left: 5%
+    font-size: 1rem
+    margin-bottom: 20px
+  #project
+    width: 95%
+  .repo_title
+    font-size: 1.8rem
+  .repo_description
+    font-size: 1rem
