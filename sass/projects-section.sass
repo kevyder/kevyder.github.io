@@ -15,7 +15,17 @@ $purple-color : #2B0059
   border: none
   font-family: 'Source Sans Pro', sans-serif
   margin-left: 10%
-  font-size: 1.8rem
+  font-size: 1.5rem
+  background-color: #fff
+  border-bottom: 2px solid #666
+  color: #666
+  &:focus
+    outline: none
+  & > option
+    font-size: 1.2rem
+    outline: none
+  & > option:hover
+    outline-color: $purple-color
 
 #project
   display: block

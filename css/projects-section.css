@@ -13,7 +13,17 @@
   border: none;
   font-family: 'Source Sans Pro', sans-serif;
   margin-left: 10%;
-  font-size: 1.8rem; }
+  font-size: 1.5rem;
+  background-color: #fff;
+  border-bottom: 2px solid #666;
+  color: #666; }
+  .language:focus {
+    outline: none; }
+  .language > option {
+    font-size: 1.2rem;
+    outline: none; }
+  .language > option:hover {
+    outline-color: #2B0059; }
 
 #project {
   display: block;

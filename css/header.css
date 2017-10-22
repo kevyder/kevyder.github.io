@@ -18,6 +18,42 @@ header {
   display: inline-block;
   margin-left: 10%; }
 
+.mobile-button {
+  width: 30px;
+  height: 50px;
+  margin-right: 10%;
+  display: none; }
+
+.lines-button {
+  height: 3px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+  top: 50%;
+  transition: .3s; }
+  .lines-button::before, .lines-button::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    position: absolute; }
+  .lines-button::before {
+    top: 10px;
+    left: 0; }
+  .lines-button::after {
+    top: -10px;
+    left: 0; }
+
+.close-lines {
+  transform: rotate(45deg); }
+  .close-lines::before {
+    top: 0;
+    transform: rotate(-95deg); }
+  .close-lines::after {
+    display: none; }
+
 .title {
   font-size: 1.5rem;
   font-weight: 400;
@@ -48,6 +84,8 @@ header {
     background-color: #fff; }
 
 @media screen and (max-width: 800px) {
+  .mobile-button {
+    display: inline-block; }
   .title {
     font-size: 1rem; }
   .container-options {
@@ -57,11 +95,14 @@ header {
     flex-direction: column-reverse;
     text-align: center;
     justify-content: center;
-    right: 0;
     top: 10%;
+    right: 100%;
     margin: 0;
     position: absolute;
-    z-index: 9999; }
+    z-index: 500;
+    transition: .3s; }
+  .active-menu {
+    right: 0; }
   .option {
     width: 40%;
     margin: 20px auto; } }
