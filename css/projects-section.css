@@ -33,6 +33,10 @@
 
 .repo_link {
   text-decoration: none; }
+  .repo_link:nth-child(1) .repo {
+    margin-top: 15px; }
+  .repo_link:nth-last-child(1) .repo {
+    margin-bottom: 15px; }
 
 .repo {
   border-bottom: 1px solid #999;

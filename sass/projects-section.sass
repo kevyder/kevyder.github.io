@@ -33,9 +33,12 @@ $purple-color : #2B0059
   margin: 0 auto
   overflow-x: hidden
 
-
 .repo_link
   text-decoration: none
+  &:nth-child(1) .repo
+    margin-top: 15px
+  &:nth-last-child(1) .repo
+    margin-bottom: 15px
 
 .repo
   border-bottom: 1px solid #999

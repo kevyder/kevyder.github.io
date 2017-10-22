@@ -280,6 +280,10 @@ header {
 
 .repo_link {
   text-decoration: none; }
+  .repo_link:nth-child(1) .repo {
+    margin-top: 15px; }
+  .repo_link:nth-last-child(1) .repo {
+    margin-bottom: 15px; }
 
 .repo {
   border-bottom: 1px solid #999;
@@ -313,3 +317,44 @@ header {
     font-size: 1.8rem; }
   .repo_description {
     font-size: 1rem; } }
+
+.about-section {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  background-color: #2B0059;
+  padding: 50px 0; }
+
+.middle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%; }
+
+.photo {
+  width: 200px;
+  height: 200px;
+  background-image: url(https://pbs.twimg.com/profile_images/919786029191704576/yuJ6IwN-_400x400.jpg);
+  background-size: cover;
+  border-radius: 100%; }
+
+.textcontent {
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  color: #fff; }
+  .textcontent h1 {
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+    margin-bottom: 10px; }
+  .textcontent .icons {
+    width: 100%; }
+
+@media screen and (max-width: 800px) {
+  .about-section {
+    height: auto;
+    flex-direction: column; }
+  .middle-container {
+    width: 100%; } }

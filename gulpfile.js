@@ -28,14 +28,15 @@ gulp.task('css-minify', function () {
     gulp.src('css/main.css')
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('final_css'));
+        .pipe(gulp.dest('css'));
 });
 
 gulp.task('scripts', function() {
     return gulp.src('js/*.js')
         .pipe(concat('app.js'))
         .pipe(minify())
-        .pipe(gulp.dest('final_js'));
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('js'));
 });
 
 gulp.task('default', ['sass', 'css-minify', 'scripts']);
