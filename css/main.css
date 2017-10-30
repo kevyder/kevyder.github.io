@@ -403,3 +403,13 @@ header {
       font-weight: 700; }
     .skills_table table td {
       font-family: 'Source Sans Pro', sans-serif; }
+
+footer {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  color: #666;
+  overflow-x: hidden; }
+  footer p {
+    text-align: center;
+    padding: 2rem 0; }
