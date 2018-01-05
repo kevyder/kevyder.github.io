@@ -4,6 +4,7 @@ var cssmin = require('gulp-cssmin');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var minify = require('gulp-minify');
+var inlinesource = require('gulp-inline-source');
 
 gulp.task('sass', function () {
   return gulp.src('sass/*.sass')
@@ -29,4 +30,11 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('final_js'));
 });
 
-gulp.task('default', ['sass', 'css-minify', 'scripts']);
+gulp.task('inlinesource', function () {
+    return gulp.src('index.html')
+        .pipe(inlinesource())
+        .pipe(gulp.dest('./out'));
+});
+
+
+gulp.task('default', ['sass', 'css-minify', 'scripts', 'inlinesource']);
