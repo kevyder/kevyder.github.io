@@ -61,7 +61,7 @@ function repoTemplate(repos) {
   var repoHTML = "";
   for (var key in repos) {
     repoHTML += `
-    <a class="repo_link" href="${repos[key].html_url}" target="_blank">
+    <a class="repo_link" href="${repos[key].html_url}">
       <div class="repo">
         <h3 class="repo_title">${repos[key].name}</h3>
         <p class="repo_description">${repos[key].description}</p>
