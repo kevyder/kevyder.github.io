@@ -1,7 +1,6 @@
 # dependencies
 /node_modules
 node_modules
-# final css
-final_css
-# final javascript
-final_js
+# compiled assets
+/assets
+
