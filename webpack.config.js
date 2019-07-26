@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
 	mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
-	entry: ['./js/app.js', './sass/app.sass'],
+	entry: ['./js/app.js', './scss/app.scss'],
 	output: {
 		path: path.resolve(__dirname, 'assets'),
 		filename: 'js/app.min.js',
