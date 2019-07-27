@@ -37,27 +37,55 @@
 	<link rel="shortcut icon" href="favicon.ico" />
     <title>Kevin Rodríguez | @kevyder | web developer</title>
     <link rel="stylesheet" href="assets/css/app.min.css">
-    <script src="assets/js/app.min.js"></script>
 </head>
 <body>
-    
+    <header>
+        <nav class="nav-bar">
+            <ul class="logo">
+                <li><h1 class="title">Kevin Rodríguez.</h1></li>
+            </ul>
+            <ul class="mobile-button">
+                <div class="lines-button"></div>
+            </ul>
+            <ul class="container-options">
+                <li class="option"><a data-easing="easeOutCubic" href="#skills">Skills</a></li>
+                <li class="option"><a data-easing="easeOutCubic" href="#resume" id='to_resume'>About me</a></li>
+                <li class="option"><a data-easing="easeOutCubic" href="#projects" id='to_projects'>Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Person",
+          "name": "Kevin Rodríguez",
+          "image": "https://pbs.twimg.com/profile_images/919361107684446208/qcHLmcEa_400x400.jpg",
+          "jobTitle": "Web developer",
+          "email": "mailto:kyrodriguez97@gmail.com",
+          "url": "https://kevyder.github.io",
+          "sameAs": [
+            "http://www.facebook.com/kevyder",
+            "http://www.linkedin.com/in/kevyder",
+            "http://www.twitter.com/kevyder",
+            "http://www.pinterest.com/kevyder"
+            "https://www.instagram.com/kevyder/"
+          ]
+        }
+    </script>
+    <script>
+        WebFontConfig = {
+            google: {
+                families: ['Fira Sans', 'Montserrat']
+            }
+        };
+        (function(d) {
+            var wf = d.createElement('script'), s = d.scripts[0];
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+            wf.async = true;
+            s.parentNode.insertBefore(wf, s);
+        })(document);
+    </script>
+    <script src="assets/js/app.min.js"></script>
 </body>
-<script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Person",
-      "name": "Kevin Rodríguez",
-      "image": "https://pbs.twimg.com/profile_images/919361107684446208/qcHLmcEa_400x400.jpg",
-      "jobTitle": "Web developer",
-      "email": "mailto:kyrodriguez97@gmail.com",
-      "url": "https://kevyder.github.io",
-      "sameAs": [
-        "http://www.facebook.com/kevyder",
-        "http://www.linkedin.com/in/kevyder",
-        "http://www.twitter.com/kevyder",
-        "http://www.pinterest.com/kevyder"
-        "https://www.instagram.com/kevyder/"
-      ]
-    }
-</script>
 </html>
