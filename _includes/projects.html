@@ -1,0 +1,15 @@
+<div class="projects" id="projects">
+  <h2 class="projects_title">My Projects</h2>
+  <div id="project-wrapper">
+    {% assign projects = site.projects | sort: 'order' %}
+    {% for project in projects %}
+      <a class="project_link" target="_blank" href="{{ project.source }}">
+        <div class="project">
+          <h3 class="project_title">{{ project.title }}</h3>
+          <p class="project_description">{{ project.description }}</p>
+          <p class="project_stack">Stack: {{ project.stack }}</p>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</div>

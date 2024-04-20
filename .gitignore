@@ -5,3 +5,10 @@ node_modules
 final_css
 # final javascript
 final_js
+
+# Jekyll
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
