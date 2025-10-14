@@ -36,12 +36,21 @@ header {
 .logo {
   display: inline-block;
   margin-left: 10%;
+  @media (max-width: 768px) {
+    margin-left: 5%;
+  }
 }
 .mobile-button {
   width: 30px;
   height: 50px;
   margin-right: 10%;
   display: none;
+  cursor: pointer;
+  z-index: 100;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
 .lines-button {
   height: 3px;
@@ -89,11 +98,36 @@ header {
   font-weight: 400;
   margin: 0;
   text-transform: uppercase;
+
+  .name {
+    display: inline-block;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
 }
 .container-options {
   margin-right: 10%;
   display: flex;
   justify-content: space-around;
+
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    transition: right 0.3s ease-in-out;
+
+    &.active {
+      right: 0;
+    }
+  }
 }
 .option {
   a {
