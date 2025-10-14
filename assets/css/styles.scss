@@ -8,11 +8,22 @@
   text-decoration: none;
 }
 
+@font-face {
+  font-family: 'DepartureMono';
+  src: url("/fonts/DepartureMono-Regular.woff2") format("woff2"),
+        url("/fonts/DepartureMono-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 body,
 html {
   height: 100%;
   max-width: 100%;
+  font-family: 'DepartureMono', monospace;
+  background-color: #181b19;
+  color: #ffffff;
 }
 
 @import "app";

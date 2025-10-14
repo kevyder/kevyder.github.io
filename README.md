@@ -1,4 +1,4 @@
-# Kevin Rodríguez Website
+# kevyder.dev
 This repository contains the source code for the personal website of Kevin Rodríguez, a software developer and technology enthusiast. The website showcases Kevin's projects, skills, and contact information.
 
 ## 🚀 Technologies

@@ -1,0 +1,30 @@
+.main {
+  height: 90%;
+  width: 100%;
+
+  .about {
+    width: 35%;
+    margin: 2.5% 5% 2.5% 10%;
+
+    .description {
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .social-links {
+      .social-link {
+        text-decoration: underline;
+        color: #ffffff;
+        font-weight: bold;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s;
+        line-height: 1.8rem;
+
+        &:hover {
+          border-color: #ffffff;
+        }
+      }
+    }
+  }
+}
