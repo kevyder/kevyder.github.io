@@ -6,6 +6,22 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.ascii-art {
+  display: inline-block;
+  animation: shake 1s ease-in-out;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+}
+
 .lines-button,
 .option:hover:after {
   border-radius: 20px;
@@ -76,7 +92,6 @@ header {
 .container-options {
   margin-right: 10%;
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-around;
 }
 .option {

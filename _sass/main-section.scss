@@ -1,7 +1,9 @@
 .main {
   height: 90%;
   width: 100%;
+  display: flex;
 
+  // about me section
   .about {
     width: 35%;
     margin: 2.5% 5% 2.5% 10%;
@@ -12,8 +14,27 @@
       margin-bottom: 2rem;
     }
 
+    .about-title {
+      font-size: 1.3rem;
+      margin: 4rem 0 1rem 0;
+    }
+
+    .skills {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 2rem;
+      color: #999999;
+
+      .skill {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.5rem;
+      }
+    }
+
     .social-links {
       .social-link {
+        font-size: 1.1rem;
         text-decoration: underline;
         color: #ffffff;
         font-weight: bold;
@@ -25,6 +46,50 @@
           border-color: #ffffff;
         }
       }
+    }
+  }
+
+  // projects section
+  .projects {
+    width: 35%;
+    margin: 2.5% 10% 2.5% 5%;
+
+    .projects-title {
+      font-size: 1.3rem;
+    }
+
+    #project-wrapper {
+      display: block;
+      margin: 0 auto 1rem auto;
+      overflow-x: hidden;
+    }
+
+    .project_link {
+      &:nth-child(1) .project {
+        margin-top: 15px;
+      }
+
+      &:nth-last-child(1) .project {
+        margin-bottom: 15px;
+      }
+    }
+
+    .project {
+      padding: 0.5rem 1rem;
+      color: #666;
+
+      &:hover {
+        border-bottom: 1px solid #ffffff;
+        color: #ffffff;
+      }
+    }
+
+    .project_title {
+      font-size: 1.1rem;
+    }
+
+    .project_stack {
+      font-size: 1rem;
     }
   }
 }
