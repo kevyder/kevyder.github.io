@@ -88,6 +88,7 @@ header {
   font-size: 1.5rem;
   font-weight: 400;
   margin: 0;
+  text-transform: uppercase;
 }
 .container-options {
   margin-right: 10%;
@@ -98,19 +99,18 @@ header {
   a {
     margin: .5rem;
     font-size: 1.2rem;
-    color: #fff;
+    color: #ffffff;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+    line-height: 1.8rem;
+
+    &:hover {
+      border-color: #ffffff;
+      text-decoration: underline;
+    }
   }
   &:hover {
-    position: relative;
-
-    &:after {
-      content: "";
-      width: 80%;
-      height: 2px;
-      position: absolute;
-      bottom: 5px;
-      left: 10%;
-      right: 10%;
-    }
+    text-decoration: underline;
   }
 }
