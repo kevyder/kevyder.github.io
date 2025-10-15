@@ -23,7 +23,7 @@ email: kyrodriguez97@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Kevin Rodríguez | @kevyder | Bogotá-based Software Engineer | Building innovative software solutions
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://kevyder.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kevyder.dev/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kevyder
 github_username:  kevyder
 

@@ -1,4 +1,4 @@
-# Kevin Rodríguez Website
+# kevyder.dev
 This repository contains the source code for the personal website of Kevin Rodríguez, a software developer and technology enthusiast. The website showcases Kevin's projects, skills, and contact information.
 
 ## 🚀 Technologies
@@ -28,6 +28,12 @@ This repository contains the source code for the personal website of Kevin Rodr�
 - `_projects/`: Projects collection
 - `_sass/`: SASS style files
 - `assets/`: Static assets (CSS, JS, images)
+- `fonts/`: Custom font files
+- `icons/`: Icon assets
+- `_site/`: Generated static site (not tracked in git)
+- `404.html`: Custom 404 error page
+- `robots.txt`: Search engine crawling rules
+- `sitemap.xml`: Site structure for search engines
 
 ## 📝 License
 

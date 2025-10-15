@@ -1,0 +1,135 @@
+.main {
+  min-height: 90%;
+  width: 100%;
+  display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 80%;
+    margin: 10% 5%;
+  }
+
+  // about me section
+  .about {
+    width: 35%;
+    margin: 2.5% 5% 2.5% 10%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin: 2rem 0;
+    }
+
+    .description {
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+      margin-bottom: 2rem;
+
+      @media (max-width: 768px) {
+        font-size: 1.1rem;
+      }
+    }
+
+    .about-title {
+      font-size: 1.3rem;
+      margin: 4rem 0 1rem 0;
+
+      @media (max-width: 768px) {
+        margin: 2rem 0 1rem 0;
+      }
+    }
+
+    .skills {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 2rem;
+      color: #999999;
+
+      @media (max-width: 768px) {
+        margin-bottom: 1.5rem;
+      }
+
+      .skill {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.5rem;
+
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .social-links {
+      .social-link {
+        font-size: 1.1rem;
+        text-decoration: underline;
+        color: #ffffff;
+        font-weight: bold;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s;
+        line-height: 1.8rem;
+
+        &:hover {
+          border-color: #ffffff;
+        }
+      }
+    }
+  }
+
+  // projects section
+  .projects {
+    width: 35%;
+    margin: 2.5% 10% 2.5% 5%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin: 2rem 0;
+    }
+
+    .projects-title {
+      font-size: 1.3rem;
+    }
+
+    #project-wrapper {
+      display: block;
+      margin: 0 auto 1rem auto;
+      overflow-x: hidden;
+
+      @media (max-width: 768px) {
+        margin: 1rem 0;
+      }
+    }
+
+    .project_link {
+      &:nth-child(1) .project {
+        margin-top: 15px;
+      }
+
+      &:nth-last-child(1) .project {
+        margin-bottom: 15px;
+      }
+    }
+
+    .project {
+      padding: 1rem;
+      color: #666;
+
+      &:hover {
+        border-bottom: 1px solid #ffffff;
+        color: #ffffff;
+      }
+
+      @media (max-width: 768px) {
+        padding: 1.5rem 0 1.5rem 0;
+      }
+    }
+
+    .project_title {
+      font-size: 1.1rem;
+    }
+
+    .project_stack {
+      font-size: 1rem;
+    }
+  }
+}
