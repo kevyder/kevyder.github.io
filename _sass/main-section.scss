@@ -1,3 +1,5 @@
+$dark-turquoise: #30d5c8;
+
 .main {
   min-height: 90%;
   width: 100%;
@@ -7,6 +9,11 @@
     flex-direction: column;
     width: 80%;
     margin: 10% 5%;
+  }
+
+  .accentuated {
+    font-weight: bold;
+    color: $dark-turquoise;
   }
 
   // about me section
@@ -60,17 +67,23 @@
     }
 
     .social-links {
-      .social-link {
-        font-size: 1.1rem;
-        text-decoration: underline;
-        color: #ffffff;
-        font-weight: bold;
-        border-bottom: 2px solid transparent;
-        transition: border-color 0.3s;
-        line-height: 1.8rem;
+      li {
+        display: inline;
+        margin-right: .5rem;
 
-        &:hover {
-          border-color: #ffffff;
+        .social-link {
+          font-size: 1.1rem;
+          text-decoration: underline;
+          color: #ffffff;
+          font-weight: bold;
+          border-bottom: 2px solid transparent;
+          transition: border-color 0.3s;
+          line-height: 1.8rem;
+
+          &:hover {
+            color: $dark-turquoise;
+            border-color: $dark-turquoise;
+          }
         }
       }
     }
@@ -115,8 +128,8 @@
       color: #666;
 
       &:hover {
-        border-bottom: 1px solid #ffffff;
-        color: #ffffff;
+        border-bottom: 1px solid $dark-turquoise;
+        color: $dark-turquoise;
       }
 
       @media (max-width: 768px) {
