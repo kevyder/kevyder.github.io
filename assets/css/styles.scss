@@ -1,9 +1,6 @@
 ---
 ---
 
-@import url('https://fonts.cdnfonts.com/css/superhelio?styles=9424');
-
-
 * {
   padding: 0;
   margin: 0;
@@ -11,11 +8,17 @@
   text-decoration: none;
 }
 
+@font-face {
+  font-family: 'superhelio';
+  src: url('/fonts/superhelio-regular.TTF') format('truetype');
+  font-display: swap;
+}
+
 body,
 html {
   height: 100%;
   max-width: 100%;
-  font-family: 'superhelio _regular', sans-serif;
+  font-family: 'superhelio', sans-serif;
   font-weight: normal;
   font-style: normal;
   background-color: #181b19;
