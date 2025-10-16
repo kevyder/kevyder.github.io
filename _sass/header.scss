@@ -1,4 +1,6 @@
 
+$dark-turquoise: #30d5c8;
+
 header {
   height: 10%;
   color: #fff;
@@ -138,13 +140,12 @@ header {
     border-bottom: 2px solid transparent;
     transition: border-color 0.3s;
     line-height: 1.8rem;
+    text-decoration: underline;
 
     &:hover {
-      border-color: #ffffff;
+      color: $dark-turquoise;
+      border-color: $dark-turquoise;
       text-decoration: underline;
     }
-  }
-  &:hover {
-    text-decoration: underline;
   }
 }
