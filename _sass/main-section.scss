@@ -1,4 +1,5 @@
 $dark-turquoise: #30d5c8;
+$gray-text: #B3B3B3;
 
 .main {
   min-height: 90%;
@@ -71,7 +72,7 @@ $dark-turquoise: #30d5c8;
       list-style: none;
       padding: 0;
       margin-bottom: 2rem;
-      color: #999999;
+      color: $gray-text;
 
       @media (max-width: 768px) {
         margin-bottom: 1.5rem;
@@ -154,7 +155,7 @@ $dark-turquoise: #30d5c8;
 
     .project {
       padding: 1rem;
-      color: #666;
+      color: $gray-text;
 
       &:hover {
         border-bottom: 1px solid $dark-turquoise;
