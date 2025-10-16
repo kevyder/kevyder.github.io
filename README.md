@@ -28,7 +28,6 @@ This repository contains the source code for the personal website of Kevin Rodr√
 - `_projects/`: Projects collection
 - `_sass/`: SASS style files
 - `assets/`: Static assets (CSS, JS, images)
-- `fonts/`: Custom font files
 - `icons/`: Icon assets
 - `_site/`: Generated static site (not tracked in git)
 - `404.html`: Custom 404 error page
