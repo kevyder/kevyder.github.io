@@ -87,6 +87,13 @@ $dark-turquoise: #30d5c8;
         }
       }
     }
+
+    @media (max-width: 768px) {
+      li {
+        display: block !important;
+        margin: 0.5rem 0;
+      }
+    }
   }
 
   // projects section
